@@ -1,0 +1,270 @@
+/*
+---------------------------------------------
+Índice
+------------------------------------------------
+1. Typography
+2. Main Nav
+3. Home
+4. About
+5. Work
+6. Single Work
+7. Pricing
+8. Contact
+--------------------------------------------- */
+*{
+  font-family: 'Newsreader', sans-serif !important;
+}
+html {font-family: 'Newsreader', sans-serif;}
+/* Typography */
+p, a {font-weight: 400;}
+.h2 {font-size: 40px;}
+.h3 {font-size: 28px;}
+.light-300 {
+  font-family: 'Newsreader', sans-serif !important;
+  font-weight: 300;
+}
+.regular-400 {
+  font-family: 'Newsreader', sans-serif !important;
+  font-weight: 400;
+}
+.semi-bold-600 {
+  font-family: 'Open Sans', sans-serif !important;
+  font-weight: 600;
+}
+.typo-space-line::after,
+.typo-space-line-center::after {
+  content: "";
+  width: 150px;
+  display:block;
+  position: absolute;
+  border-bottom:  5px solid #d65d4d;
+  padding-top: .5em;
+}
+.typo-space-line-center::after {
+  left: 50%;
+  margin-left: -75px;
+}
+/* Main Nav */
+#main_nav .nav-item .nav-link:hover {color: rgb(196, 192, 181);
+}
+/* Home */
+#index_banner {
+  background-image: url('./../img/Invertir.png');
+  background-position: center center;
+  background-size: cover;
+  height: 100%;
+  min-height: 60vh;
+  width: 100%;
+}
+#index_banner .carousel-item {
+  min-height: 60vh;
+}
+#index_banner .carousel-control-prev i,
+#index_banner .carousel-control-next i {
+  color: rgb(236, 177, 12);
+  text-decoration: none;
+  font-size: 4em;
+}
+#index_banner .carousel-inner {
+  height: 80vh;
+}
+#index_banner .carousel-indicators li,
+#index_banner .carousel-indicators.active {
+  background-color: rgb(236, 177, 12);
+  /* las rayas de abajo del carrousel van de color azul*/
+}
+.service-wrapper .service-footer {
+  max-width: 720px;
+}
+.service-work.card {
+  border-radius: 10px !important;
+  cursor: pointer;
+}
+.service-work .service-work-vertical {
+	background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 33.33%, rgba(255,255,255,1) 66.66%, rgba(255,255,255,0) 99.99%);
+  background-size: 300% 300%;
+  background-position: 0% 100%;
+  transition: .5s;
+}
+.service-work .service-work-vertical:hover {
+  background-position: 0% 0%;
+  transition: .5s;
+}
+.service-work .service-work-vertical:hover * {
+  color: #000;
+  border-color: #000;
+  transition: .5s;
+}
+.recent-work.card{
+  border-radius: 10px !important;
+}
+.recent-work .recent-work-vertical {
+	background: rgb(255,255,255);
+  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 33.333%, rgb(0, 0, 0) 66.666%, rgba(255,255,255,0) 99.999%);
+  background-size: 300% 300%;
+  background-position: 0% 100%;
+  transition: .5s;
+  cursor: pointer;
+}
+.recent-work .recent-work-vertical:hover {
+  background-position: 0% 0%;
+  transition: .5s;
+}
+.recent-work .recent-work-vertical:hover div.recent-work-content {
+  top: 50%;
+  margin-top: -2.5em;
+  position: absolute;
+}
+.recent-work .recent-work-vertical:hover * {
+  color: white;
+  transition: .5s;
+}
+/* About */
+.imagen-empresa{
+  border-radius: 25px;
+  filter: opacity(80%);
+}
+#work_banner {
+  background-image: url('./../img/NuestroTrabajo.png');
+  background-position: center center; background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+.progress {
+  height: 8px;
+}
+.objective-icon {
+  border-radius: 13px;
+  width: 8rem;
+}
+.partner-wap {
+  background-color: #7276ec;
+  transition: 1s;
+  cursor: pointer;
+}
+.partner-wap:hover {
+  background-color: #b1b3f5;
+}
+.why-us {
+  background: #cfcfcc;
+  background: -moz-linear-gradient(0deg, rgba(239,239,253,1) 50%, rgba(255,255,255,1) 50%);
+  background: -webkit-linear-gradient(0deg, rgba(239,239,253,1) 50%, rgba(255,255,255,1) 50%);
+  background: linear-gradient(0deg, rgba(239,239,253,1) 50%, rgba(255,255,255,1) 50%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#efeffd",endColorstr="#ffffff",GradientType=1);
+}
+.team-member-img {
+  transition-duration: 0.15s;
+}
+.team-member:hover .team-member-img {
+  padding: 10px !important;
+}
+
+/* Work */
+/* Singel Work */
+#work_single_banner {
+  background-image: url('./../img/banner-bg-02.jpg');
+  background-position: center center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+.related-content {
+  border-radius: 20px;
+  cursor: pointer;
+}
+/* Pricing */
+.pricing-list {
+  margin-bottom: 1px;
+}
+.pricing-table {
+  max-width: 350px;
+  margin: auto;
+}
+.pricing-table,
+.pricing-horizontal {
+  border-radius: 15px !important;
+}
+/* Contact */
+#floatingtextarea {
+  height: 150px
+}
+/* Footer */
+footer a.text-light:hover {
+  color: #bfbfbf !important;
+  transition-duration: 0.15s;
+}
+
+/*MODIFICACIONES*/
+.colorparatodo{
+  color: #eab70b;
+}
+.botonbanner{
+  color: white;
+  border:solid 3px white;
+}
+.boton:hover{
+  background: rgb(238, 238, 238);
+  color: #000 !important;
+  border-color: rgb(238, 238, 238);
+}
+.fondo{
+  background: #6C757D;
+}
+.fondocopy{
+  background: rgba(190, 187, 187, 0.384);
+}
+.negrita{
+  font-weight: bold;
+}
+.bordes{
+  border-radius: 25%;
+}
+hr {
+  height: 5px !important;
+  color:black;
+  width: 80%;
+  margin: auto;
+  border-radius: 10px;
+  opacity: 1;
+}
+.fondonosotros{
+  background-color: rgba(239,239,253,1);
+}
+.barras{
+  background-color: rgb(89, 187, 187);
+}
+.barrascompleta{
+  background-color: #e8a2a2;
+}
+.bordecard{
+  background-color: rgba(190, 187, 187, 0.384) ;
+  border:3px solid #eab70b;
+}
+.separacion{
+  background-color: #212529;
+  width: auto;
+  height: 4rem;
+}
+.separacionnosotros{
+  background-color: rgba(239,239,253,1);
+  width: auto;
+  height: 5rem;
+}
+.form-control:focus{
+  border-color: #eab70b;
+  outline: 0;
+  box-shadow: 0 0 0 0.20rem #eab70b;
+}
+.navbar-dark .navbar-toggler-icon{
+  background-image:url(../icons/Hamburguesa.png)
+}
+.btn-check:active+.btn-outline-primary, .btn-check:checked+.btn-outline-primary, .btn-outline-primary.active, .btn-outline-primary.dropdown-toggle.show, .btn-outline-primary:active, .btn-outline-primary:hover{
+  background:#dc3545;
+  color: white !important;
+}
+.btnformulario:hover{
+  background: #dc3545!important;
+  color: #eab70b !important;
+  border-color: rgb(238, 238, 238);
+}
