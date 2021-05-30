@@ -263,6 +263,8 @@ hr {
 .botonbanner{
   color: white;
   border:solid 3px white;
+  -webkit-box-shadow: none !important;
+  box-shadow:none!important;
 }
 .boton:hover{
   background: rgb(238, 238, 238);
