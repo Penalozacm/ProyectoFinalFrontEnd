@@ -199,15 +199,6 @@ footer a.text-light:hover {
 .colorparatodo{
   color: #eab70b;
 }
-.botonbanner{
-  color: white;
-  border:solid 3px white;
-}
-.boton:hover{
-  background: rgb(238, 238, 238);
-  color: #000 !important;
-  border-color: rgb(238, 238, 238);
-}
 .fondo{
   background: #6C757D;
 }
@@ -261,10 +252,30 @@ hr {
 }
 .btn-check:active+.btn-outline-primary, .btn-check:checked+.btn-outline-primary, .btn-outline-primary.active, .btn-outline-primary.dropdown-toggle.show, .btn-outline-primary:active, .btn-outline-primary:hover{
   background:#dc3545;
-  color: white !important;
+  color: white;
+  border-color:#eab70b;
+  
 }
-.btnformulario:hover{
-  background: #dc3545!important;
-  color: #eab70b !important;
+.btn-outline-check:focus+.btn-outline-primary, .btn-outline-primary:focus {
+  -webkit-box-shadow: 0 0 0 0.15rem rgb(255, 238, 0) !important;
+  box-shadow: 0 0 0 0.15rem rgb(207, 188, 14) !important;
+}
+.botonbanner{
+  color: white;
+  border:solid 3px white;
+}
+.boton:hover{
+  background: rgb(238, 238, 238);
+  color: #000 !important;
   border-color: rgb(238, 238, 238);
+}
+.botoncontacto{
+  background-color: black;
+  color: white;
+}
+.botoncontacto:hover, .botoncontacto:focus{
+  background:#dc3545 !important;
+  color: #eab70b;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
